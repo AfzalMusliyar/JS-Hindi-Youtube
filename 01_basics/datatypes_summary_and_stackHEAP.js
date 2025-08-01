@@ -43,3 +43,30 @@ console.log(typeof userEmail);
 //userEmail = undefined
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//                                      Stack and HEAP
+//stack-for primitive-makes copy
+//heap-for non primitive-references and actually changes value if done
+
+let name ="afzal"
+let surname =name
+surname="musliyar"
+
+console.log(name);
+console.log(surname);
+
+
+let userOne={
+    email:"afzal@gmail.com",
+    upi:123456
+}
+
+let userTwo = userOne
+userTwo.email="afsooool@gmail.com"
+userOne.upi=888
+
+console.log(userOne.email);
+console.log(userTwo.email);
+console.log(userOne.upi);
+console.log(userTwo.upi);
